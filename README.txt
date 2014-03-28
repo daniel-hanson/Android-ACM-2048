@@ -1,0 +1,1 @@
+This is the repository for the 2048 app being developed by the Mizzou Android ACM SIG.
