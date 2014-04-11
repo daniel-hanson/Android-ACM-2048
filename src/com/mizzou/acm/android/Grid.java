@@ -1,19 +1,27 @@
 package com.mizzou.acm.android;
 
+import java.util.ArrayList;
+
 
 public class Grid
 {
 	Gravity gravity = null;
 	private static final int SIZE = 4;		//How many rows and columns there are in the grid
 	
-	Cell[][] buildGrid ()
+	ArrayList<ArrayList<Cell>> buildGrid ()
 	{
-		Cell cells[][] = new Cell[SIZE][SIZE];
-		for(int x = 0; x < SIZE; x++)
-			for (int y = 0; y < SIZE; y++)
-				cells[x][y] = new Cell();
+		ArrayList<ArrayList<Cell>> list = new ArrayList<ArrayList<Cell>>();
 		
-		return cells;
+		for(int x = 0; x < SIZE; x++)
+		{
+			ArrayList<Cell> temp = new ArrayList<Cell>();
+			for (int y = 0; y < SIZE; y++)
+				temp.add(new Cell());
+			
+			list.add(temp);
+		}		
+		
+		return list;
 	}
 
 	Cell[][] fromState(Cell[][] state)
