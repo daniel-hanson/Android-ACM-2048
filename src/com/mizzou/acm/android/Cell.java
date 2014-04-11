@@ -14,6 +14,11 @@ public class Cell
 	
 	private int value = 2;
 	
+	public Cell()
+	{
+		
+	}
+	
 	public Cell(Position position, int value)
 	{
 		this.previousPosition = null;
