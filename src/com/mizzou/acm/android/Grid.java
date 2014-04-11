@@ -26,7 +26,13 @@ public class Grid
 				//Cell cells[x][y] = (tile ? new Tile(tile.position, tile.value): new Cell());
 				
 			}
+<<<<<<< HEAD
 		
 		return cells;
 	}
+=======
+		}
+		return cells;
+	}	
+>>>>>>> f96f2ea70a7120d79e9bc9181d1c4648a8eb6ae6
 }
