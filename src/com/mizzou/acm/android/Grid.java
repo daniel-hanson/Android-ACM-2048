@@ -31,7 +31,7 @@ public class Grid
 				ArrayList<Cell> temp = new ArrayList<Cell>();
 				for(int y = 0; y < SIZE; y++)
 				{
-					Cell tile[x][y] = state[x][y];
+					Boolean tile = state[x][y];
 					temp.add(tile ? new Cell(cell.position,cell.value) : new Cell());
 					list.add(temp);
 				
