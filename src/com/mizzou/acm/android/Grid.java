@@ -1,7 +1,5 @@
 package com.mizzou.acm.android;
 
-import java.util.ArrayList;
-
 
 public class Grid
 {
@@ -10,18 +8,17 @@ public class Grid
 	
 	Cell[][] buildGrid ()
 	{
-		Cell[][] list = new Cell[4][4];
+		Cell[][] cells = new Cell[4][];
 		
 		for(int x = 0; x < SIZE; x++)
 		{
-			cells[x] temp = new ArrayList<Cell>();
-			for (int y = 0; y < SIZE; y++)
-				temp.add(new Cell());
+			cells[x] = new Cell[4];
 			
-			list.add(temp);
+			for (int y = 0; y < SIZE; y++)
+				cells[x][y] = new Cell();
 		}		
 		
-		return list;
+		return cells;
 	}
 
 	Cell[][] fromState(Cell[][] state)
@@ -32,7 +29,7 @@ public class Grid
 			for (int y = 0; y < SIZE; y++)
 			{
 				
-				cells.get(x).get(y) = state[x][y];
+				cells[x][y] = state[x][y];
 				//Cell cells[x][y] = (tile ? new Tile(tile.position, tile.value): new Cell());
 				
 			}
