@@ -31,9 +31,7 @@ public class Grid
 				
 				cells[x][y] = state[x][y];
 				//Cell cells[x][y] = (tile ? new Tile(tile.position, tile.value): new Cell());
-				
 			}
-			
 		}
 		
 		return cells;
