@@ -24,9 +24,6 @@ public class Cell
 		this.previousPosition = null;
 		this.updatePosition(position);
 		this.value = value;
-		
-		this.previousPosition = null;
-		this.mergedFrom       = null; // Tracks tiles that merged together
 	}
 	
 	public void updatePosition(Position position)
@@ -38,6 +35,15 @@ public class Cell
 	private void updateXY()
 	{//Given the position, update the physical location on the screen
 		//This can be done by getting the X and Y position of the grid, moving forward by (size of the gap) * (position + 1)
+	}
+
+function Tile(position, value) {
+	  this.x                = position.x;
+	  this.y                = position.y;
+	  this.value            = value || 2;
+
+	  this.previousPosition = null;
+	  this.mergedFrom       = null; // Tracks tiles that merged together
 	}
 
 	void savePosition()
