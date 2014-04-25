@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
 		
 		//After the activity and its content is created, start the game loop.
 		manager = new GameManager();
-		this.startGameLoop();
+		manager.startGameLoop();
 	}
 
 	@Override
@@ -26,15 +26,5 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
-	}
-
-	private void startGameLoop()
-	{//Game loop
-		//Run until we close.
-		boolean running = true;
-		while(running)
-		{//Logic: Update, Render, Check. There is a class for each of these.
-			
-		}
 	}
 }
