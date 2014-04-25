@@ -35,5 +35,20 @@ public class Grid
 		}
 		
 		return cells;
-	}	
+	}
+	
+	public class availableCells()
+	{
+		for(int x = 0; x < SIZE; x++)
+		{
+			for(int y = 0; y < SIZE; y++)
+			{
+				if(cells[x][y] == 0)
+				{
+					int[] available = {x,y};
+					return available;
+				}
+			}
+		}
+	}
 }
