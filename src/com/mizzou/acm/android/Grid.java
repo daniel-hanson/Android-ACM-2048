@@ -1,9 +1,8 @@
 package com.mizzou.acm.android;
 
-
 public class Grid
 {
-	Gravity gravity = null;
+	private Gravity gravity = null;
 	private static final int SIZE = 4;		//How many rows and columns there are in the grid
 	
 	Cell[][] buildGrid ()
@@ -35,6 +34,14 @@ public class Grid
 		}
 		
 		return cells;
+	}
+	
+	public int getCellValue(int x, int y)
+	{//Get the value of the cell at the given coordinates
+		
+		//TO-DO
+		
+		return 0;		
 	}
 	
 	public class availableCells()

@@ -1,5 +1,7 @@
 package com.mizzou.acm.android.helpers;
 
+import com.mizzou.acm.android.Grid;
+
 public class GameCheck
 {//Checks to see if we have won, lost, or neither.
 	//This flag checks to see if the player has already won. If so, we don't want
@@ -11,10 +13,21 @@ public class GameCheck
 		hasWon = false;
 	}
 	
-	public States check()
-	{
-		States thisState = States.NEITHER;
+	public States check(Grid grid)
+	{		
+		//Check the win state first. That way, if the board fills up at the same time,
+		//the player will still win. This will only be done if you haven't already won.
+		if(!hasWon)
+			checkWin(grid);
 		
-		return thisState;
+		return States.NEITHER;
+	}
+	
+	private boolean checkWin(Grid grid)
+	{
+		//Scan for the 2048 tile
+		for(int i = 0; i < 4; i++)
+			for(int j = 0; j < 4; j++)
+				if(grid.
 	}
 }
