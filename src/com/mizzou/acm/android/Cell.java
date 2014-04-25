@@ -1,5 +1,8 @@
+/* The Cell class holds information about each numbered tile in the game.
+ * This will be what moves around the board.
+ */
+ 
 package com.mizzou.acm.android;
-
 
 public class Cell
 {
