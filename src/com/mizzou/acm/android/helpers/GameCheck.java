@@ -17,12 +17,14 @@ public class GameCheck
 	{		
 		//Check the win state first. That way, if the board fills up at the same time,
 		//the player will still win. This will only be done if you haven't already won.
-		if(!hasWon)
-			checkWin(grid);
+		if(!hasWon && checkWin(grid))
+			return States.WIN;
 		
 		//Check loss next. Board must be filled, and there cannot be any available moves.
-		checkLoss(grid);
+		if(checkLoss(grid))
+			return States.LOSE;
 		
+		//If we haven't won or lost, then we're still playing.
 		return States.NEITHER;
 	}
 	
