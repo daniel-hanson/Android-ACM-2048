@@ -20,11 +20,11 @@ public class GameLogic
   
   public void reset()
   {
-    //Create a new grid
-    grid = new Grid();
+	//Create a new grid
+	grid = new Grid();
     
-    //Reset Score
-		score = 0;
+    	//Reset Score
+	score = 0;
   }
   
   public Grid getGrid()
