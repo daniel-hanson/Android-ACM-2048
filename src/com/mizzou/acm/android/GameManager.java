@@ -11,6 +11,9 @@ package com.mizzou.acm.android;
 
 public class GameManager
 {
-	
+	public GameManager()
+	{//Constructor creates the actual game. Logic is called in the correct order
+		
+	}
 	
 }
