@@ -63,4 +63,9 @@ public class Grid
 	{
 		cells[x][y] = new Cell();
 	}
+	
+	public class removeTile(x,y)
+	{
+		cells[x][y] = 0;
+	}
 }
