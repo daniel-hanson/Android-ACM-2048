@@ -43,7 +43,14 @@ public class GameManager
 		boolean running = true;
 		while(running)
 		{//Logic: Update, Render, Check. There is a class for each of these.
+			//Run the game logic
 			
+			
+			//Run the rendering
+			
+			
+			//Get the current state of the game after the last update
+			States state = check.check(logic.getGrid());
 		}
 	}
 }
