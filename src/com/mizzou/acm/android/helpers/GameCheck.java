@@ -20,6 +20,9 @@ public class GameCheck
 		if(!hasWon)
 			checkWin(grid);
 		
+		//Check loss next. Board must be filled, and there cannot be any available moves.
+		checkLoss(grid);
+		
 		return States.NEITHER;
 	}
 	
@@ -37,5 +40,31 @@ public class GameCheck
 		
 		//If we made it here, we did not win.
 		return false;
+	}
+	
+	private boolean checkLoss(Grid grid)
+	{//Check all the tiles around each tile to see if we can move anywhere.
+		//We want to loop through each cell and check the surrounding cells.
+		for(int i = 0; i < 4; i++)
+			for(int j = 0; j < 4; j++)
+			{
+				//Get the current value
+				int value = grid.getCellValue(i, j);
+				
+				//Get the value of up, left, down, and right cells. Error-checking done
+				//in getCellValue function
+				int up = grid.getCellValue(i - 1, j);
+				int down = grid.getCellValue(i + 1, j);
+				int left = grid.getCellValue(i, j - 1);
+				int right = grid.getCellValue(i, j + 1);
+				
+				
+			}
+		
+		if(true)
+		return false;
+		
+		//If we made it here, we have lost.
+		return true;
 	}
 }
