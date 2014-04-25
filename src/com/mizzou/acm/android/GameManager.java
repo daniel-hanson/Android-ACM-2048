@@ -19,6 +19,8 @@ public class GameManager
 	private GameRender render;
 	private GameCheck check;
 	
+	int score = 0;
+	
 	public GameManager()
 	{//Manager the actual game. Logic is called in the correct order
 		this.initializeHelpers();
@@ -30,7 +32,7 @@ public class GameManager
 		initializeHelpers();
 		
 		//Reset Score
-		
+		score = 0;
 		
 		//Reset board
 		
