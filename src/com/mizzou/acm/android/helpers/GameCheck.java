@@ -1,3 +1,5 @@
+//The check method for this class is called after the game has been updated and drawn.
+//This allows the game to decide whether the play has won, lost, or may make a new selection.
 package com.mizzou.acm.android.helpers;
 
 import com.mizzou.acm.android.Grid;
