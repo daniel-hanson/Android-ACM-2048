@@ -9,11 +9,37 @@
  */
 package com.mizzou.acm.android;
 
+import com.mizzou.acm.android.helpers.GameCheck;
+import com.mizzou.acm.android.helpers.GameLogic;
+import com.mizzou.acm.android.helpers.GameRender;
+
 public class GameManager
 {
+	private GameLogic logic;
+	private GameRender render;
+	private GameCheck check;
+	
 	public GameManager()
-	{//Constructor creates the actual game. Logic is called in the correct order
-		
+	{//Manager the actual game. Logic is called in the correct order
+		this.initializeHelpers();
 	}
 	
+	public void reset()
+	{//Reset everything
+		//Re-initialize helpers
+		initializeHelpers();
+		
+		//Reset Score
+		
+		
+		//Reset board
+		
+	}
+
+	private void initializeHelpers()
+	{//Initialize the three helpers.
+		logic = new GameLogic();
+		render = new GameRender();
+		check = new GameCheck();
+	}
 }

@@ -10,17 +10,14 @@ import android.os.Bundle;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
-	private GameLogic logic;
-	private GameRender render;
-	private GameCheck check;
-	
+	GameManager manager;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		//After the activity and its content is created, start the game loop.
-		this.initializeHelpers();
+		manager = new GameManager();
 		this.startGameLoop();
 	}
 
@@ -39,24 +36,5 @@ public class MainActivity extends Activity {
 		{//Logic: Update, Render, Check. There is a class for each of these.
 			
 		}
-	}
-	
-	private void reset()
-	{//Reset everything
-		//Re-initialize helpers
-		initializeHelpers();
-		
-		//Reset Score
-		
-		
-		//Reset board
-		
-	}
-
-	private void initializeHelpers()
-	{//Initialize the three helpers.
-		logic = new GameLogic();
-		render = new GameRender();
-		check = new GameCheck();
 	}
 }
