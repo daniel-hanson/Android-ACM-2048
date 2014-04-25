@@ -58,11 +58,10 @@ public class GameCheck
 				int left = grid.getCellValue(i, j - 1);
 				int right = grid.getCellValue(i, j + 1);
 				
-				
+				//If any of those are the same as value, you haven't lost
+				if(value == up || value == down || value == left || value == right)
+					return false;
 			}
-		
-		if(true)
-		return false;
 		
 		//If we made it here, we have lost.
 		return true;
