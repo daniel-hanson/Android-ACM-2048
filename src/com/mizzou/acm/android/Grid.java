@@ -58,4 +58,9 @@ public class Grid
 			}
 		}
 	}
+	
+	public class insertTile(x,y)
+	{
+		cells[x][y] = new Cell();
+	}
 }
