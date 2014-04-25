@@ -19,8 +19,6 @@ public class GameManager
 	private GameRender render;
 	private GameCheck check;
 	
-	int score = 0;
-	
 	public GameManager()
 	{//Manager the actual game. Logic is called in the correct order
 		this.initializeHelpers();
@@ -28,14 +26,8 @@ public class GameManager
 	
 	public void reset()
 	{//Reset everything
-		//Re-initialize helpers
+		//Re-initialize helpers => This will also reset the game and all related fields
 		initializeHelpers();
-		
-		//Reset Score
-		score = 0;
-		
-		//Reset board
-		
 	}
 
 	private void initializeHelpers()
@@ -43,5 +35,15 @@ public class GameManager
 		logic = new GameLogic();
 		render = new GameRender();
 		check = new GameCheck();
+	}
+	
+	public void startGameLoop()
+	{//Game runs here
+		//Run until we close.
+		boolean running = true;
+		while(running)
+		{//Logic: Update, Render, Check. There is a class for each of these.
+			
+		}
 	}
 }
