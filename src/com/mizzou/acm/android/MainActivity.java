@@ -24,13 +24,6 @@ public class MainActivity extends Activity {
 		this.startGameLoop();
 	}
 
-	private void initializeHelpers()
-	{//Initialize the three helpers.
-		logic = new GameLogic();
-		render = new GameRender();
-		check = new GameCheck();
-	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -46,5 +39,24 @@ public class MainActivity extends Activity {
 		{//Logic: Update, Render, Check. There is a class for each of these.
 			
 		}
+	}
+	
+	private void reset()
+	{//Reset everything
+		//Re-initialize helpers
+		initializeHelpers();
+		
+		//Reset Score
+		
+		
+		//Reset board
+		
+	}
+
+	private void initializeHelpers()
+	{//Initialize the three helpers.
+		logic = new GameLogic();
+		render = new GameRender();
+		check = new GameCheck();
 	}
 }
