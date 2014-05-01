@@ -5,6 +5,8 @@
 //After the game update, we will render the drawing for the game's current state.
 package com.mizzou.acm.android.helpers;
 
+import com.mizzou.acm.android.Grid;
+
 public class GameLogic
 {
   //This class will hold and act upon the grid
