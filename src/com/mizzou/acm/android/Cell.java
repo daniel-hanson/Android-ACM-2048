@@ -18,6 +18,11 @@ public class Cell
 	private int value = 2;
 	private int mergedFrom;
 	
+	public Cell()
+	{
+		this(new Position(0, 0), 2);
+	}
+	
 	public Cell(Position position, int value)
 	{
 		this.previousPosition = null;
