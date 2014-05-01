@@ -44,7 +44,7 @@ public class Grid
 		return 0;		
 	}
 	
-	public class availableCells()
+	public int[] availableCells()
 	{
 		for(int x = 0; x < SIZE; x++)
 		{
@@ -59,12 +59,12 @@ public class Grid
 		}
 	}
 	
-	public class insertTile(x,y)
+	public void insertTile(int x, int y)
 	{
 		cells[x][y] = new Cell();
 	}
 	
-	public class removeTile(x,y)
+	public void removeTile(int x, int y)
 	{
 		cells[x][y] = 0;
 	}
