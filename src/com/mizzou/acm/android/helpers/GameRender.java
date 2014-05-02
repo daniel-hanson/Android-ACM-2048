@@ -7,11 +7,19 @@ import com.mizzou.acm.android.Grid;
 
 public class GameRender
 {
-  
-
-	public void render(Grid newGrid, int score)
+	public void render(Grid grid, int score)
 	{//Drawing done here
+		//Draw the background
 		
 		
+		//Draw the grid
+		
+		
+		//Draw all the cells
+		for(int i = 0; i < 4; i++)
+			for(int j = 0; j < 4; j++)
+			{//Each cell will have its own color related to the number.
+				
+			}
 	}
 }
