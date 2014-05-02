@@ -37,7 +37,7 @@ public class Grid
 		return cells;
 	}
 	
-	private int getCellValue(int x, int y)
+	public int getCellValue(int x, int y)
 	{//Get the value of the cell at the given coordinates
 		
 		//TO-DO
