@@ -6,6 +6,7 @@ public class Grid
 	private static final int SIZE = 4;		//How many rows and columns there are in the grid
 	
 	private Cell[][] cells;
+	
 	Cell[][] buildGrid()
 	{
 		Cell[][] cells = new Cell[4][];
@@ -21,7 +22,7 @@ public class Grid
 		return cells;
 	}
 
-	Cell[][] fromState(Cell[][] state)
+	private Cell[][] fromState(Cell[][] state)
 	{
 		Cell[][] cells = buildGrid();
 		for(int x = 0; x < SIZE; x++)
@@ -36,7 +37,7 @@ public class Grid
 		return cells;
 	}
 	
-	public int getCellValue(int x, int y)
+	private int getCellValue(int x, int y)
 	{//Get the value of the cell at the given coordinates
 		
 		//TO-DO
@@ -44,7 +45,7 @@ public class Grid
 		return 0;		
 	}
 	
-	public int[] availableCells()
+	private int[] availableCells()
 	{
 		for(int x = 0; x < SIZE; x++)
 			for(int y = 0; y < SIZE; y++)
@@ -59,18 +60,20 @@ public class Grid
 		return available;
 	}
 	
-	public void insertTile(int x, int y)
+	private void insertTile(int x, int y)
 	{
 		cells[x][y] = new Cell();
 	}
 	
-	public void removeTile(int x, int y)
+	private void removeTile(int x, int y)
 	{//At grid coordinates x,y, set it equal to 0.
 		cells[x][y].setValue(0);
 	}
 	
 	public void update(Gravity gravity)
-	{//This method is called from the GameLogic. This is all that should be accessible from that class. Return 
+	{//This method is called from the GameLogic. This is all that should be accessible from that class.
+		this.gravity = gravity;
+		
 		
 	}
 }
