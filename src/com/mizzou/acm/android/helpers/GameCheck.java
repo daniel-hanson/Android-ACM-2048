@@ -31,11 +31,7 @@ public class GameCheck
 	}
 	
 	private boolean checkWin(Grid grid)
-	{
-		//We don't care about checking for wins if hasWon is true
-		if(hasWon)
-			return false;
-		
+	{		
 		//Scan for the 2048 tile
 		for(int i = 0; i < 4; i++)
 			for(int j = 0; j < 4; j++)
