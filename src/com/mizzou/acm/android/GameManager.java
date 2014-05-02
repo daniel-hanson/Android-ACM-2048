@@ -45,13 +45,13 @@ public class GameManager
 		while(running)
 		{//Logic: Update, Render, Check. There is a class for each of these.
 			//Run the game logic
-			
+			Grid newGrid = logic.update(Gravity.UP);
 			
 			//Run the rendering
-			
+			render.render(newGrid);
 			
 			//Get the current state of the game after the last update
-			States state = check.check(logic.getGrid());
+			States state = check.check(newGrid);
 		}
 	}
 }

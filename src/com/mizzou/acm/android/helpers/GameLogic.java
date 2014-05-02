@@ -5,6 +5,7 @@
 //After the game update, we will render the drawing for the game's current state.
 package com.mizzou.acm.android.helpers;
 
+import com.mizzou.acm.android.Gravity;
 import com.mizzou.acm.android.Grid;
 
 public class GameLogic
@@ -28,16 +29,17 @@ public class GameLogic
 		//Reset Score
 		score = 0;
 	}
-	  
-	public Grid getGrid()
-	{//Use this getter to get the grid. This will be useful for the drawing and checking phases
-		return this.grid;
-	}
 	
 	public int getScore()
 	{//When rendering, call this to get the score
 		return this.score;
 	}
 	
-	
+	public Grid update(Gravity g)
+	{//The gravity was changed, so the game can update. 
+		//Update the grid
+		this.grid.update(g);
+		
+		return this.grid;
+	}
 }
