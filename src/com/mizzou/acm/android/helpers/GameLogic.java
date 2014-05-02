@@ -18,16 +18,16 @@ public class GameLogic
 	
 	public GameLogic()
 	{
-		reset();
+		this.reset();
 	}
 	  
 	public void reset()
 	{
 		//Create a new grid
-		grid = new Grid();
+		this.grid = new Grid();
 		
 		//Reset Score
-		score = 0;
+		this.score = 0;
 	}
 	
 	public int getScore()

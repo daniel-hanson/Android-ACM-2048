@@ -22,13 +22,13 @@ public class GameManager
 	
 	public GameManager()
 	{//Manager the actual game. Logic is called in the correct order
-		this.initializeHelpers();
+		this.reset();
 	}
 	
 	public void reset()
 	{//Reset everything
 		//Re-initialize helpers => This will also reset the game and all related fields
-		initializeHelpers();
+		this.initializeHelpers();
 	}
 
 	private void initializeHelpers()
