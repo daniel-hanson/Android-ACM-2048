@@ -52,6 +52,25 @@ public class GameManager
 			
 			//Get the current state of the game after the last update
 			States state = check.check(newGrid);
+			
+			//After setting the state, check it and make a decision
+			
+			switch (state)
+			{
+				case LOSE:
+					//Do the lose method here
+					
+					break;
+				case WIN:
+					//Do the win method here
+					
+					break;
+				case NEITHER:
+					//Game is still going. Keep playing
+					
+					break;
+							
+			}
 		}
 	}
 }
