@@ -68,4 +68,9 @@ public class Grid
 	{//At grid coordinates x,y, set it equal to 0.
 		cells[x][y].setValue(0);
 	}
+	
+	public void update(Gravity gravity)
+	{//This method is called from the GameLogic. This is all that should be accessible from that class. Return 
+		
+	}
 }
