@@ -9,9 +9,9 @@ public class GameRender
 {
   
 
-	public void render(Grid newGrid)
-	{
-		// TODO Auto-generated method stub
+	public void render(Grid newGrid, int score)
+	{//Drawing done here
+		
 		
 	}
 }

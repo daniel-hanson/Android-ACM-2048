@@ -48,7 +48,7 @@ public class GameManager
 			Grid newGrid = logic.update(Gravity.UP);
 			
 			//Run the rendering
-			render.render(newGrid);
+			render.render(newGrid, logic.getScore());
 			
 			//Get the current state of the game after the last update
 			States state = check.check(newGrid);
