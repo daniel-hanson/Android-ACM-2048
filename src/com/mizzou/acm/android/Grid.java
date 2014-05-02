@@ -39,10 +39,7 @@ public class Grid
 	
 	public int getCellValue(int x, int y)
 	{//Get the value of the cell at the given coordinates
-		
-		//TO-DO
-		
-		return 0;		
+		return cells[x][y].getValue();	
 	}
 	
 	private int[] availableCells()
