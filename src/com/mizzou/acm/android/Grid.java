@@ -42,7 +42,7 @@ public class Grid
 		return cells[x][y].getValue();	
 	}
 	
-	private int[] availableCells()
+	public int[] availableCells()
 	{
 		for(int x = 0; x < SIZE; x++)
 			for(int y = 0; y < SIZE; y++)
@@ -53,7 +53,7 @@ public class Grid
 				}
 		
 		//If we make it down here, there are no available cells. Might have lost.
-		int[] available = {0, 0};
+		int[] available = {-1, -1};
 		return available;
 	}
 	
