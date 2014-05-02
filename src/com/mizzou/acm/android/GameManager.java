@@ -33,9 +33,9 @@ public class GameManager
 
 	private void initializeHelpers()
 	{//Initialize the three helpers.
-		logic = new GameLogic();
-		render = new GameRender();
-		check = new GameCheck();
+		this.logic = new GameLogic();
+		this.render = new GameRender();
+		this.check = new GameCheck();
 	}
 	
 	public void startGameLoop()
@@ -53,24 +53,31 @@ public class GameManager
 			//Get the current state of the game after the last update
 			States state = check.check(newGrid);
 			
-			//After setting the state, check it and make a decision
-			
+			//After setting the state, check it and make a decision			
 			switch (state)
 			{
 				case LOSE:
 					//Do the lose method here
-					
+					this.lose();
 					break;
 				case WIN:
 					//Do the win method here
-					
+					this.win();
 					break;
 				case NEITHER:
 					//Game is still going. Keep playing
-					
-					break;
-							
+					break;							
 			}
 		}
+	}
+
+	private void lose()
+	{
+		
+	}
+
+	private void win()
+	{
+		
 	}
 }
