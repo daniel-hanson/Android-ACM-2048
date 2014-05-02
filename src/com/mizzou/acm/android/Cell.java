@@ -48,9 +48,68 @@ public class Cell
 		//This can be done by getting the X and Y position of the grid, moving forward by (size of the gap) * (position + 1)
 	}
 
-	void savePosition()
+	public void savePosition()
 	{
 		this.previousPosition = position;
 	}
-	
+
+	public int getX()
+	{
+		return x;
+	}
+
+	public void setX(int x)
+	{
+		this.x = x;
+	}
+
+	public int getY()
+	{
+		return y;
+	}
+
+	public void setY(int y)
+	{
+		this.y = y;
+	}
+
+	public Position getPreviousPosition()
+	{
+		return previousPosition;
+	}
+
+	public void setPreviousPosition(Position previousPosition)
+	{
+		this.previousPosition = previousPosition;
+	}
+
+	public Position getPosition()
+	{
+		return position;
+	}
+
+	public void setPosition(Position position)
+	{
+		this.position = position;
+	}
+
+	public int getValue()
+	{
+		return value;
+	}
+
+	public void setValue(int value)
+	{
+		this.value = value;
+	}
+
+	public int getMergedFrom()
+	{
+		return mergedFrom;
+	}
+
+	public void setMergedFrom(int mergedFrom)
+	{
+		this.mergedFrom = mergedFrom;
+	}
 }
