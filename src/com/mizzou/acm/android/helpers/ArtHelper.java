@@ -3,10 +3,17 @@
  */
 package com.mizzou.acm.android.helpers;
 
+import com.mizzou.acm.android.Cell;
+
 public class ArtHelper
 {
-	public String get(Object o)
+	public static String get(Object o)
 	{//Return the string of the location of the artwork for the given object
+		return "";
+	}
+	
+	public static String get(Class<Cell> class1, int i)
+	{
 		return "";
 	}
 	
