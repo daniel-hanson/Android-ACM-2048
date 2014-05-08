@@ -10,20 +10,23 @@ public class GameRender
 {
 	public void render(Grid grid, int score)
 	{//Drawing done here
+		String artPath = "";
+		
 		//Draw the background
 		
 		
 		//Draw the grid
 		
 		
-		//Draw all the cells
-		
+		//Draw all the cells		
 		for(int i = 0; i < 4; i++)
 			for(int j = 0; j < 4; j++)
 			{//Each cell will have its own color related to the number.
 				//If value is 0, do the blank art. Otherwise, do the value art
 				if(grid.getCellValue(i, j) == 0)
-					ArtHelper.get(Cell.class, 0);
+					artPath = ArtHelper.get(Cell.class, 0);
+				else
+					artPath = ArtHelper.get(Cell.class, grid.getCellValue(i, j));
 			}
 	}
 }

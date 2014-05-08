@@ -12,8 +12,8 @@ public class ArtHelper
 		return "";
 	}
 	
-	public static String get(Class<Cell> class1, int i)
-	{
+	public static String get(Class<Cell> class1, int value)
+	{//This will be used for cells
 		return "";
 	}
 	
