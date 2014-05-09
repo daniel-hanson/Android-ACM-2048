@@ -13,7 +13,7 @@ public class GameRender
 		String artPath = "";
 		
 		//Draw the background
-		
+		artPath = ArtHelper.get("background");
 		
 		//Draw the grid
 		artPath = ArtHelper.get("grid");
