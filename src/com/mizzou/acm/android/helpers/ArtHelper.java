@@ -3,21 +3,19 @@
  */
 package com.mizzou.acm.android.helpers;
 
-import com.mizzou.acm.android.Cell;
-
 public class ArtHelper
 {
-	public static String get(Object o)
+	public static String get(String s)
 	{//Return the string of the location of the artwork for the given object
 		return "";
 	}
 	
-	public static String get(Class<Cell> class1, int value)
+	public static String get(int value)
 	{//This will be used for cells
 		return "";
 	}
 	
-	private String XMLParse(Object o)
+	private String XMLParse(String s)
 	{//Search an XML file for the object that is passed
 		String file = "";
 		

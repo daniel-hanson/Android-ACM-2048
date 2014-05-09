@@ -16,7 +16,7 @@ public class GameRender
 		
 		
 		//Draw the grid
-		
+		artPath = ArtHelper.get("grid");
 		
 		//Draw all the cells		
 		for(int i = 0; i < 4; i++)
@@ -24,9 +24,9 @@ public class GameRender
 			{//Each cell will have its own color related to the number.
 				//If value is 0, do the blank art. Otherwise, do the value art
 				if(grid.getCellValue(i, j) == 0)
-					artPath = ArtHelper.get(Cell.class, 0);
+					artPath = ArtHelper.get(0);
 				else
-					artPath = ArtHelper.get(Cell.class, grid.getCellValue(i, j));
+					artPath = ArtHelper.get(grid.getCellValue(i, j));
 			}
 	}
 }
