@@ -3,7 +3,6 @@
 */
 package com.mizzou.acm.android.helpers;
 
-import com.mizzou.acm.android.Cell;
 import com.mizzou.acm.android.Grid;
 
 public class GameRender
